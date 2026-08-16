@@ -45,9 +45,9 @@ type DecodeError struct {
 
 func (e *DecodeError) Error() string {
 	if e.Detail == "" {
-		return fmt.Sprintf("ffmpeg could not decode %q", e.VideoPath)
+		return fmt.Sprintf("ffmpeg could not decode %s", e.VideoPath)
 	}
-	return fmt.Sprintf("ffmpeg could not decode %q: %s", e.VideoPath, e.Detail)
+	return fmt.Sprintf("ffmpeg could not decode %s: %s", e.VideoPath, e.Detail)
 }
 
 func (e *DecodeError) Unwrap() error { return e.Cause }

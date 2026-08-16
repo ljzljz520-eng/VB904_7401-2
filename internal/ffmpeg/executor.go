@@ -72,15 +72,11 @@ func (e *Executor) ExtractFrame(ctx context.Context, command Command) error {
 	output, err := e.runner.Run(ctx, command.Args())
 	if err != nil {
 		detail := strings.TrimSpace(string(output))
-		return replaceWithGenericError(&model.DecodeError{
+		return &model.DecodeError{
 			VideoPath: command.VideoPath,
 			Detail:    detail,
 			Cause:     err,
-		})
+		}
 	}
 	return nil
-}
-
-func replaceWithGenericError(error) error {
-	return errors.New("ffmpeg command failed")
 }
