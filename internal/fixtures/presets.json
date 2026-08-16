@@ -1,0 +1,17 @@
+[
+  {
+    "name": "clean",
+    "video_filter": "eq=contrast=1.04:brightness=0.02:saturation=1.05",
+    "description": "自然校正，适合日间素材"
+  },
+  {
+    "name": "cinematic",
+    "video_filter": "eq=contrast=1.18:brightness=-0.03:saturation=0.88",
+    "description": "压低高光并收敛饱和度"
+  },
+  {
+    "name": "night-lift",
+    "video_filter": "eq=contrast=1.10:brightness=0.08:saturation=1.12",
+    "description": "提亮夜景暗部并保留色彩"
+  }
+]

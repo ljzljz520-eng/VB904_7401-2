@@ -1,0 +1,20 @@
+[
+  {
+    "id": "seaside",
+    "scene": "海边",
+    "video_path": "C:\\Video Lab\\fixtures\\seaside beach.mp4",
+    "frame_output": "C:\\Video Lab\\frames\\seaside.jpg"
+  },
+  {
+    "id": "city",
+    "scene": "城市",
+    "video_path": "C:\\Video Lab\\fixtures\\city commute.mp4",
+    "frame_output": "C:\\Video Lab\\frames\\city.jpg"
+  },
+  {
+    "id": "night",
+    "scene": "夜景",
+    "video_path": "C:\\Video Lab\\fixtures\\night skyline.mp4",
+    "frame_output": "C:\\Video Lab\\frames\\night.jpg"
+  }
+]
